@@ -1,11 +1,14 @@
-artists = [:Florence_and_the_Machine, :Gorillaz, :Cage_the_Elephant, :Pentatonix, :Of_Monsters_and_Men]
-songs = [:Drumming_Song, :Clint_Eastwood, :Aint_No_Rest_for_the_Wicked, :Water, :Little_Talks]
 #1. Define a method named `list_artists`. This method should use the `each_key` method to iterate over the hash and return all the artists (the keys)
 # This method should accept a hash as an argument.
 
 def $list_artists()
   artists = [:Florence_and_the_Machine, :Gorillaz, :Cage_the_Elephant, :Pentatonix, :Of_Monsters_and_Men]
-
+  songs = [:Drumming_Song, :Clint_Eastwood, :Aint_No_Rest_for_the_Wicked, :Water, :Little_Talks]
+  playlist = {}
+  index = 0
+    artists.each do |singers|
+      playlist[singers] = artist[index]
+    index += 1
 end
 
 #2. Define a method named `list_songs`. This method should use the `each_value` method to iterate over the music library hash and print out the name of the songs in the library.
